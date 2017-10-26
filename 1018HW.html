@@ -7,12 +7,12 @@
 <body>
 	<input id="keyInPrev" type="number"> + <input id="keyInNext" type="number">
 	<button id="butn" onclick="result()">計算</button>
-	<div id="resultBox"></div>
+	<div id="result"></div>
 	<script>
 		document.getElementById("butn").addEventListener("click", function(){
 			var keyInPrev = document.getElementById('keyInPrev').value;
 			var keyInNext = document.getElementById('keyInNext').value;
-			document.getElementById("resultBox").innerHTML = result(keyInPrev, keyInNext);
+			document.getElementById("result").innerHTML = result(keyInPrev, keyInNext);
 		});
 		function result(keyInPrevInt, keyInNextInt) {
 			var keyInPrevInt = parseInt(keyInPrevInt);
