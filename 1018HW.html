@@ -6,10 +6,10 @@
 </head>
 <body>
 	<input id="keyInPrev" type="number"> + <input id="keyInNext" type="number">
-	<button id="btn" onclick="result()">計算</button>
+	<button id="butn" onclick="result()">計算</button>
 	<div id="resultBox"></div>
 	<script>
-		document.getElementById("btn").addEventListener("click", function(){
+		document.getElementById("butn").addEventListener("click", function(){
 			var keyInPrev = document.getElementById('keyInPrev').value;
 			var keyInNext = document.getElementById('keyInNext').value;
 			document.getElementById("resultBox").innerHTML = result(keyInPrev, keyInNext);
