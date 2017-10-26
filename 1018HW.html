@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>1018：function運算作業</title>
+</head>
+<body>
+	<input id="keyInPrev" type="number"> + <input id="keyInNext" type="number">
+	<button id="btn" onclick="result()">計算</button>
+	<div id="resultBox"></div>
+	<script>
+		document.getElementById("btn").addEventListener("click", function(){
+			var keyInPrev = document.getElementById('keyInPrev').value;
+			var keyInNext = document.getElementById('keyInNext').value;
+			document.getElementById("resultBox").innerHTML = result(keyInPrev, keyInNext);
+		});
+		function result(keyInPrevInt, keyInNextInt) {
+			var keyInPrevInt = parseInt(keyInPrevInt);
+			var keyInNextInt = parseInt(keyInNextInt);
+
+			return(keyInPrevInt + keyInNextInt);
+		};
+	</script>
+</body>
+</html>
