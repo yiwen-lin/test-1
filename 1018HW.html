@@ -5,12 +5,12 @@
 <title>1018：function運算作業</title>
 </head>
 <body>
-	<input id="keyInPrev" type="number"> + <input id="keyInNext" type="number">
-	<button id="butn" onclick="result()">計算</button>
+	<input id="keyIn" type="number"> + <input id="keyInNext" type="number">
+	<button id="butn" onclick="result()">計算機</button>
 	<div id="result"></div>
 	<script>
 		document.getElementById("butn").addEventListener("click", function(){
-			var keyInPrev = document.getElementById('keyInPrev').value;
+			var keyInPrev = document.getElementById('keyIn').value;
 			var keyInNext = document.getElementById('keyInNext').value;
 			document.getElementById("result").innerHTML = result(keyInPrev, keyInNext);
 		});
